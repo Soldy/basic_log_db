@@ -1,0 +1,7 @@
+ALTER TABLE `link_log-log_addresses`
+ADD CONSTRAINT `FK_link_log-log_addresses-log`
+FOREIGN KEY (log) REFERENCES logs(id);
+
+ALTER TABLE `link_log-log_addresses`
+ADD CONSTRAINT `FK_link_log-log_addresses-log_address`
+FOREIGN KEY (address) REFERENCES log_addresses(id);

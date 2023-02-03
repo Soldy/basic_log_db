@@ -1,0 +1,5 @@
+CREATE TABLE `log_addresses` (
+    `id` SERIAL,
+    `address` VARCHAR(16),
+     KEY `index` (`id`)
+)  ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;;
